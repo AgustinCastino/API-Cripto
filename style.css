@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.container{
+    display: flex;
+}
+
+/* LISTA DE MONEDAS */
+.monedas{
+    width: 15vw;
+    height: 100vh;
+
+    background-color: #343a40;
+}
+
+.moneda:first-child{
+    border: none;
+}
+
+.moneda{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+    margin: 0px 3px;
+
+    border-top: 1px solid lightgray;
+
+}
+
+.moneda:hover .nombreMoneda{
+    transform: scale(1.1, 1.3);
+}
+
+.moneda h2, .moneda p{
+    font-size: 16px;
+}
+
+.moneda h3{
+    font-size: 10px;
+    font-weight: 100;
+    
+    color: lightgray;
+} 
+
+.nombreMoneda{
+    display: flex;
+
+    transition: all 0.5s;
+}
+
+.nombreMoneda h3{
+    margin-left: 5px;
+}
+
+.imagenMoneda{
+    width: 20px;
+    margin: 0 5px;
+}
+
+/* FIN LISTA DE MONEDAS */
+
+/* PANEL DE INFORMACION */
+
+.panelInformacion{
+    width: 85vw;
+    height: 100vh;
+
+}
+.contenedorInformacion{
+    display: flex;
+    justify-content: space-between;
+
+    width: 70%;
+    margin: auto;
+}
+
+.informacionMoneda{
+    margin: 50px 0;
+
+    width: 70%;
+    margin: 40px auto;
+}
+
+.informacionMercado{
+    width: 30%;
+
+    font-size: 20px;
+}
+
+.informacionMercado ul li:first-child{
+    border-top: none;
+}
+
+.informacionMercado ul li{
+    padding: 4px 0;
+
+    list-style: none;
+
+    border-top: 1px solid lightgray;
+    
+}
+
+.descripcionMoneda{
+    max-width: 50%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    line-height: 25px;
+}
+
+.descripcionMoneda a{
+    text-decoration: none;
+}
+/* FIN PANEL DE INFORMACION */
